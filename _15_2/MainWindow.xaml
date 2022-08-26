@@ -1,0 +1,106 @@
+﻿<Window x:Class="_15_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_15_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <FlowDocumentPageViewer x:Name="docViewer">
+            <FlowDocument>
+                <Paragraph>
+                    <Floater Width="250" HorizontalAlignment="Right">
+                        <BlockUIContainer>
+                        <Image Source="Data/bim.png"/>
+                        </BlockUIContainer>
+                    </Floater>
+                    <Bold>ИСТОРИЯ ОПТИМИЗАЦИИ</Bold>  
+                </Paragraph>    
+                <Paragraph>
+                    <Hyperlink NavigateUri="https://softculture.cc/blog/entries/articles/vliyanie-bim-na-sovremennoe-proektirovanie">BIM на современное проектирование</Hyperlink> 
+                </Paragraph>
+                
+                <List MarkerStyle="Box">
+                    <ListItem>
+                        <Paragraph>
+                            <Italic>1. История оптимизации: роль BIM в современном проектировании.</Italic>  
+                        </Paragraph>
+                    </ListItem> 
+                    <ListItem>
+                        <Paragraph>
+                            <Italic>2. Информационные модели в современной практике проектирования.</Italic>
+                        </Paragraph>
+                    </ListItem> 
+                    <ListItem>
+                        <Paragraph>
+                            <Italic>3. Моделирование свойств материалов и их тестирование.</Italic>
+                        </Paragraph>
+                    </ListItem> 
+                    <ListItem>
+                        <Paragraph>
+                            <Italic>4. Внешнее давление.</Italic> 
+                        </Paragraph>
+                    </ListItem> 
+                    <ListItem>
+                        <Paragraph>
+                            <Italic>5. Из виртуальности в реальность.</Italic>
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <Table>
+                    <Table.Columns>
+                        <TableColumn />
+                        <TableColumn/>
+                      
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Имя раздела
+                                </Paragraph>
+                            </TableCell>  
+                            <TableCell>
+                                <Paragraph>
+                                   Текст раздела 
+                                </Paragraph>
+                            </TableCell>  
+                           
+                        </TableRow>  
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Run Foreground="Gray">История оптимизации: роль BIM в современном проектировании</Run>
+                                </Paragraph>
+                            </TableCell>  
+                            <TableCell>
+                                <Paragraph>
+                                    <Run Foreground="Gray">Повсеместное внедрение компьютерных программ в последние 25 лет привело к революционным изменениям в методе проектирования и подготовки архитектурной документации. Большинство программ используются либо для визуализации или рассуждений о форме в академическом контексте, либо для подготовки технической документации и управления проектом на практике. Такое разделение теории и практики усиливается отношениями, сложившимися между архитекторами и теми, кто реализует их проектные предложения. Этому разрыву между разработкой проекта и реализацией здания, которые в теории должны быть единым, последовательным и взаимосвязанным процессом, способствовал способ обмена документацией, который производился вручную и требовал интерпретации принимающей стороны. Сегодня этот разрыв между двумя концами спектра исчезает благодаря появлению новых возможностей, которые требуют от сторон согласованных действий — продвинутое ПО для анализа бесполезно без воображения проектировщика, и наоборот.Цифровые инструменты вышли за рамки формального изображения проектов и теперь включают в себя анализ, симуляцию и цифровое производство. Эти новые составляющие позволяют архитекторам точнее переводить свои идеи в реальность, а также использовать инновационные методы и менять традиционные способы возведения зданий. Синтез этих технологий и потребность в эффективной организации строительства привели к возникновению информационных моделей, которые радикальным образом изменили проектирование и сблизили его со строительством. И хотя современные технологии находятся на недостаточном уровне развития для автоматизированного производства полномасштабных зданий (на основе работы с ЧПУ), они позволяют выстраивать комплексные информационные модели для более точного переноса виртуальной конструкции здания в реальность. Можем ли мы перейти к парадигме экономической эффективности, используя компьютерные технологии?</Run>
+                                </Paragraph>
+                            </TableCell>  
+                           
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+
+                <BlockUIContainer>
+                    <StackPanel>
+                        <TextBlock Text="Понравилась статья?"/>
+                        <Button Content="Лайк"/>
+                    </StackPanel>
+                </BlockUIContainer>
+            
+            </FlowDocument>
+        </FlowDocumentPageViewer>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Content="Открыть" Width="100" Click="Button_Click_2"/>
+            <Button Content="Сохранить" Width="100" Click="Button_Click_1"/>
+            <Button Content="Очистить" Width="100" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
